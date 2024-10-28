@@ -14,9 +14,9 @@ class ParamConfig(BaseModel):
 
 
 class ModelConfig(BaseModel):
-    model_name: str
-    model_type: str
-    model_params: ParamConfig
+    name: str
+    type: str
+    params: ParamConfig
 
 
 class Config(BaseModel):

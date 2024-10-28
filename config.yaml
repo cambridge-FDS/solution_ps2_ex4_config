@@ -5,8 +5,8 @@ data:
     - "season_id"
 
 model:
-  model_name: "model_1"
-  model_type: "classification"
-  model_params:
+  name: "model_1"
+  type: "classification"
+  params:
     max_iter: 100
     random_state: 42

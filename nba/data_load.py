@@ -1,6 +1,6 @@
 import pandas as pd
 from pathlib import Path
-from nba.config import data
+from nba.config import config
 
 
 def load_csv(data_path: Path) -> pd.DataFrame:
@@ -8,5 +8,5 @@ def load_csv(data_path: Path) -> pd.DataFrame:
 
 
 if __name__ == "__main__":
-    df = load_csv(data.path_game)
+    df = load_csv(config.data.data_path)
     print(df.head())
