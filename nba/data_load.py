@@ -8,5 +8,6 @@ def load_csv(data_path: Path) -> pd.DataFrame:
 
 
 if __name__ == "__main__":
-    df = load_csv(config.data.data_path)
-    print(df.head())
+    data_path = Path(__file__).parent.parent / config.data.data_path
+    df = load_csv(data_path)
+    print(data_path)
